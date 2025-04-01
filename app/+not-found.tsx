@@ -1,9 +1,8 @@
 import { Link, Stack } from 'expo-router';
 import { StyleSheet } from 'react-native';
+import { Text, View } from '../components/Themed';
 
-import { Text, View } from '@/components/Themed';
-
-export default function NotFoundScreen() {
+function NotFoundScreen() {
   return (
     <>
       <Stack.Screen options={{ title: 'Oops!' }} />
@@ -38,3 +37,5 @@ const styles = StyleSheet.create({
     color: '#2e78b7',
   },
 });
+
+export default NotFoundScreen;

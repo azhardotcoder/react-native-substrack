@@ -1,37 +1,52 @@
 {
   "expo": {
-    "name": "substrack",
+    "name": "Substrack",
     "slug": "substrack",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "icon": "./assets/icon.png",
     "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
-    "splash": {
-      "image": "./assets/images/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.substrack"
     },
     "android": {
+      "package": "com.substrack",
+      "versionCode": 1,
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "displayName": "Substrack",
+      "appName": "Substrack"
     },
     "web": {
-      "bundler": "metro",
-      "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/favicon.png"
     },
     "plugins": [
       "expo-router"
     ],
+    "scheme": "substrack",
     "experiments": {
-      "typedRoutes": true
+      "tsconfigPaths": true,
+      "newArchEnabled": true
+    },
+    "updates": {
+      "enabled": true,
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/c74e840f-6d8d-44ad-a384-5cae9a186227"
+    },
+    "runtimeVersion": "1.0.0",
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "c74e840f-6d8d-44ad-a384-5cae9a186227"
+      }
     }
   }
 }

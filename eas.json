@@ -1,0 +1,50 @@
+{
+  "cli": {
+    "version": ">= 5.9.1"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "android": {
+        "gradleCommand": ":app:assembleDebug",
+        "buildType": "apk"
+      },
+      "ios": {
+        "buildConfiguration": "Debug"
+      },
+      "channel": "development"
+    },
+    "preview": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk",
+        "gradleCommand": ":app:assembleRelease"
+      },
+      "ios": {
+        "buildConfiguration": "Release"
+      },
+      "channel": "preview",
+      "env": {
+        "APP_VARIANT": "preview"
+      }
+    },
+    "production": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk",
+        "gradleCommand": ":app:assembleRelease"
+      },
+      "ios": {
+        "buildConfiguration": "Release"
+      },
+      "channel": "production",
+      "env": {
+        "APP_VARIANT": "production"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
